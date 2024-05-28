@@ -1,0 +1,882 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.layout{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.hnav{
+    width: 40%;
+}
+
+.hnav .hnav-content{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.hnav div a{
+    display: flex;
+    margin-right: 10px;
+    border-right: 1px solid gainsboro;
+    line-height: 1;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.hnav div a:hover{
+    color: rgb(158, 158, 252);
+}
+
+.hnav .last a{
+    border: none;
+}
+
+.hnav img{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    margin-right: 5px;a
+}
+
+.hnav p{
+    margin-top: 3px;
+}
+
+.btn-func{
+    width: 30%;
+}
+
+.btn-content{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50%;
+}
+
+.btn-login a{
+    display: flex;
+    margin-right: 20px;
+}
+
+.btn-login a img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-login a p{
+    margin-top: -3px;
+}
+
+nav{
+    margin-top: 0px auto;
+    width: 100% ;
+}
+
+ul.nav{
+    list-style: none;
+    display: flex;
+    margin-top: 0px auto;
+}
+
+ul.nav li{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 1px;
+}
+
+ul.nav li:hover{
+    border-bottom: 2px solid green;
+    margin-bottom: 5px;
+}
+
+.menu{
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    list-style: none;
+    min-width: 220px;
+    left: -5;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: #eee;
+    visibility: hidden;
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.sub-menu li{
+    padding: 3px 0px 0px 5px;
+}
+
+.sub-menu li.last{
+    border-bottom: none;
+}
+
+.menu:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+section{
+    margin: 5px auto;
+    width: 100%;
+}
+
+.part1{
+    display: flex;
+    border-bottom: 3px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.left-side{
+    width: 25%;
+    border-right: 1px solid gainsboro;
+    padding: 0px 10px 0 0;
+}
+
+.left-side .first-left-side{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.left-side .second-left-side{
+    padding: 20px 0 0px 0;
+}
+
+.left-side img{
+    width: 100%;
+}
+
+.left-side h3{
+    font-size: 16px;
+    color: black;
+}
+
+.left-side h3:hover{
+    color: rgb(162, 162, 255);
+}
+
+.mid-side{
+    width: 45%;
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid gainsboro;
+}
+
+.mid-side h2{
+    font-size: 20px;
+    color: black;
+}
+
+.mid-side h2:hover{
+    color: rgb(162, 162, 255);
+}
+
+.mid-side p{
+    color: gray;
+    font-size: 14px;
+}
+
+.mid-side img{
+    width: 100%;
+}
+
+.right-side{
+    width: 30%;
+    padding: 0px 10px 0px 10px;
+}
+
+.right-side img{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.right-side h3{
+    font-size: 16px;
+    color: black;
+    margin-right: 10px;
+}
+
+.right-side h3:hover{
+    color: rgb(162, 162, 255);
+}
+
+.right-side h4{
+    font-size: 16px;
+    color: black;
+    margin-right: 10px;
+}
+
+.right-side  p{
+    color: black;
+}
+
+.first-right-side a{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.second-right-side a{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 0 20px 0;
+}
+
+.third-right-side a{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 0 20px 0;
+}
+
+.four-right-side {
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.four-right-side .left-four-right-side{
+    width: 60%;
+}
+
+.four-right-side .left-four-right-side .mess-number{
+    display: flex;
+}
+
+.four-right-side .left-four-right-side .mess-number img{
+    width: 10%;
+    align-items: center;
+    padding: 5px 10px 0 10px;
+}
+
+.four-right-side .right-four-right-side a{
+    text-align: center;
+}
+
+.four-right-side .right-four-right-side img{
+    border-radius: 100%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.part2{
+    width: 100%;
+    margin:20px auto;
+    display: flex;
+    border-bottom: 3px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.part2 h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.part2 span{
+    color: green;
+}
+
+.part2-left{
+    width: 25%;
+    border-right: 1px solid gainsboro;
+    padding-right: 10px;
+}
+
+.part2-left img{
+    width: 100%;
+}
+
+.part2-left h3{
+    font-size: 16px;
+    color: black;
+}
+
+.part2-left p{
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+.part2-left h3:hover{
+    color: rgb(162, 162, 255);
+}
+
+.part2-left-first{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.part2-left-second{
+    margin-bottom: 10px;
+}
+
+
+.part2-mid{
+    width: 45%;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid gainsboro;
+}
+
+.part2-mid-list a{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.part2-mid-list a img{
+    width: 35%;
+    padding: 0px 10px 10px 0;
+}
+
+.part2-mid-list a h3{
+    width: 65%;
+    color: black;
+    font-size: 18px;
+}
+
+.part2-mid-list a h3:hover{
+    color: rgb(162, 162, 255);
+}
+
+.part2-right{
+    width: 30%;
+    padding:0 10px 0 10px;
+}
+
+.part2-right img{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.part3{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    border-bottom: 3px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.part3-left{
+    width: 50%;
+    border-right: 1px solid gainsboro;
+    padding-right: 10px;
+}
+
+.part3-left-list{
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.part3-left-list:last-child{
+    border-bottom: none;
+}
+
+.part3-left-list img{
+    width: 45%;
+}
+
+.part3-left-list .title{
+    margin-left: 10px;
+}
+
+.part3-left-list h3{
+    font-size: 18px;
+    color: black;
+}
+
+.part3-right{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.part3-right-nav{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.part3-right-nav li{
+    border: none;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.part3-right-nav li:hover{
+    border: none;
+}
+
+.part3-right-nav h3{
+    font-size: 16px;
+    color: green;
+}
+
+.part3-right-nav a{
+    color: black;
+}
+
+.part3-right-nav a:hover,.part3-right-nav h3:hover{
+    color: blue;
+}
+
+.part3-right-content{
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.part3-right-lcontent{
+    width: 40%;
+    padding-right: 10px;
+    border-right: 1px solid gainsboro;
+}
+
+.part3-right-lcontent img{
+    width: 100%;
+}
+
+.part3-right-lcontent h3{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.part3-right-lcontent p{
+    font-size: 14px;
+}
+
+.part3-right-rcontent{
+    width: 60%;
+    padding-left: 10px;
+}
+
+.part3-right-rcontent-list{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.part3-right-rcontent-list a{
+    display: flex;
+}
+
+.part3-right-rcontent-list a img{
+    width: 30%;
+    padding-top: 10px;
+}
+
+.part3-right-rcontent-list h3{
+    font-size: 16px;
+    color: black;
+}
+
+.part3-right-rcontent-list:last-child{
+    border-bottom: none;
+}
+
+.part3-right-bot{
+    width: 100%;
+    display: flex;
+    margin-top: 10px auto;
+    padding-top: 10px;
+}
+
+.part3-right-bot-left{
+    width: 50%;
+    padding-right: 10px;
+}
+
+.part3-right-bot-left h2{
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.part3-right-bot-left h3{
+    color: black;
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.part3-right-bot-left img{
+    width: 100%;
+}
+
+.part3-right-bot-right{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.part3-right-bot-right h2{
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.part3-right-bot-right h3{
+    color: black;
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.part3-right-bot-right img{
+    width: 100%;
+}
+
+.part4{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.part4-nav{
+    padding: 10px;
+    display: flex;  
+}
+
+.part4-nav-left{
+    width: 70%;
+}
+
+.part4-nav-left img{
+    padding: 0 5px 0 5px;
+}
+
+.part4-nav-left h2{
+    color: green;
+}
+
+.part4-nav-right{
+    width: 30%;
+    margin-left: 120px;
+}
+
+.part4-nav-right h2{
+    font-size: 20px;
+}
+
+.part4-media{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+}
+
+.part4-media-list{
+    width: 30%;
+    margin: 10px auto;
+    margin-bottom: 10px;
+}
+
+.part4-media-list img{
+    width: 100%;
+}
+
+.part4-media-list h3{
+    font-size: 16px;
+}
+
+.part4-short-video{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.part4-short-video h2{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.part4-short-video-list{
+    margin-top: 10px;
+    display: flex;
+}
+
+.short-video{
+    width: 16%;
+    margin: 10px auto;
+}
+
+.short-video img{
+    width: 100%;
+}
+
+.short-video h3{
+    font-size: 14px;
+}
+
+.part5{
+    width: 100%;
+}
+
+.part5-nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.part5-nav-list li{
+    font-size: 18px;
+    border-bottom: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.part5-nav-list li a h3{
+    color: green;
+}
+
+.part5-nav-list li a h3:hover{
+    color: blue;
+}
+
+.part5-nav-list li a:hover{
+    color: blue;
+}
+
+.part5-nav-list li:hover{
+    border-bottom: none;
+}
+
+.part5-content{
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.part5-left{
+    width: 20%;
+}
+
+.part5-left-box{
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.part5-left-box:last-child{
+    border: none;
+}
+
+.part5-left-box img{
+    width: 100%;
+}
+
+.part5-mid-box{
+    width: 50%;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    padding: 0 10px 0 10px;
+}
+
+.part5-mid-box img{
+    width: 100%;
+}
+
+.part5-right-box{
+    width: 30%;
+}
+
+.part5-right-list{
+    margin-left: 10px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.part5-right-list:last-child{
+    border: none;
+}
+
+.part5-right-list a{
+    display: flex;
+    width: 100%;
+}
+
+.part5-right-list a h3{
+    width: 70%;
+    margin-right: 10px;
+}
+
+.part5-right-list a img{
+    width: 30%;
+}
+
+.part6{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.part6-box{
+    width: 23%;
+    margin: 0px auto;
+    border-top: 1px solid gainsboro;
+    padding: 10px 0 30px 0;
+}
+
+.part6-box h2{
+    color: green;
+}
+
+.part6-box:last-child{
+    padding-right: 0px;
+}
+
+.part6-nav{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.part6-nav p:hover{
+    color: blue;
+}
+
+.part6-nav li{
+    margin-right: 10px;
+}
+
+.part6-box img{
+    width: 100%;
+}
+
+.part6-box h3:hover{
+    color: blue;
+}
+
+.part6-first-list{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.part6-first-list h2{
+    font-size: 18px;
+}
+
+.part6-first-list p{
+    font-size: 16px;
+}
+
+.part6-first-list h3{
+    font-size: 16px;
+}
+
+.part6-list{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.part6-list:last-child{
+    border: none;
+}
+
+.part6-list h3{
+    font-size: 14px;
+}
+
+.part6-list img{
+    width: 40%;
+    padding-left: 5px;
+}
+
+footer{
+    width: 100%;
+    border-top: 3px solid green;
+}
+
+.footer-logo{
+    width: 10%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    margin: 0px auto;
+}
+
+.footer-left{
+    width: 55%;
+}
+
+.footer-center{
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-center a:hover{
+    text-decoration: underline;
+}
+
+.footer-right{
+    width: 25%;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.footer-right img{
+    width: 45%;
+    align-items: center;
+}
+.
+
+
+
+
+
+
+
+
+
+
